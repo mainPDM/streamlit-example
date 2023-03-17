@@ -11,6 +11,6 @@ rt=st.button('Appel', on_click = appel_reseau)
 response_text=st.text_area('Réponse',value=rt)
 
 def appel_reseau():
-  res = requests.get('paste your link here')
+  res = requests.get('link')
   response = json.loads(res.text)
   return response
