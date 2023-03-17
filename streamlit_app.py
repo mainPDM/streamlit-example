@@ -7,7 +7,7 @@ import requests
 
 def appel_reseau():
   res = requests.get('link')
-  response = json.loads(res.text)
+  response = res.text
   return response
 
 st.title("Appel réseau")
