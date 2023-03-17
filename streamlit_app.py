@@ -6,7 +6,7 @@ import os
 import requests
 
 def appel_reseau():
-  res = requests.get('link')
+  res = requests.get(link)
   response = res.text
   return response
 
