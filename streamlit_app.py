@@ -13,6 +13,6 @@ def appel_reseau():
 st.title("Appel réseau")
 link=st.text_area('Lien',value='MyLink')
 rt=st.button('Appel', on_click = appel_reseau)
-response_text=st.text_area('Réponse',value=rt)
+response_text=st.text_area('Réponse',value=response)
 
 
