@@ -8,11 +8,12 @@ import requests
 def appel_reseau():
   res = requests.get(link)
   response = res.text
+  response_text=st.text_area('Réponse',value=response)
   return response
 
 st.title("Appel réseau")
 link=st.text_area('Lien',value='MyLink')
 rt=st.button('Appel', on_click = appel_reseau)
-response_text=st.text_area('Réponse',value=response)
+response_text=st.text_area('Réponse',value='Hello')
 
 
